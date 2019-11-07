@@ -1,0 +1,378 @@
+body {
+    background: linear-gradient(240deg, #9CD8D8 60%, #FBA29B 60%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*bron: https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats dooe Bryan Downing
+    /*cursor: url(img/Group%201.png), auto;*/
+}
+
+h1 {
+    text-align: left;
+    margin-left: 2em;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.125em #040405;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.125em #040405;
+}
+
+p {
+    text-align: left;
+    width: 30em;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.125em #040405;
+    margin-left: 5em;
+}
+
+/*nav*/
+nav {
+    background: linear-gradient(110deg, #70B9B9 60%, #DE5045 60%);
+    /*Bron: https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 door KEdar.*/
+}
+
+/*nav image*/
+img {
+    width: 2em;
+    border-radius: 50%;
+    padding: 0.5em
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.25em;
+    
+}
+
+/*verstop dropdown*/
+.nav-mobile {
+    display: none;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    background-color: #70B9B9;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #F39F9F;
+    color: black;
+    transition: 1s;
+
+}
+
+nav a:active {
+    color: red;
+}
+
+nav a:focus {
+    outline: dotted;
+}
+
+/*buttons*/
+.opgeven {
+    margin-left: 5.9em
+}
+
+button {
+    border-radius: 0.625em;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #DE5045;
+    padding: 0.3125em;
+    color: white;
+}
+
+button:hover {
+    transition: 0.4s;
+    color: #FFFFFF;
+    background-color: #0053ba;
+    
+}
+
+button:focus {
+    outline: dotted;
+}
+
+/*articles*/
+
+article img {
+    width: 15.625em;
+    height: 12.5em;
+    border-radius: 1.25em;
+}
+
+article img:hover {
+    opacity: 0.8;
+    
+}
+
+article {
+    border: 0.125em solid;
+    border-radius: 1.25em;
+    border-color: white;
+    padding: 0.625em;
+    margin: 2.5em;
+    text-align: center;
+    transition: transform ease-in-out 0.3s;
+}
+
+
+article:hover {
+    border-color: #DE5045;
+    transform: scale(1.1);
+    /*transform: rotate(720deg);*/
+    transition: 1s;
+    /*background:  linear-gradient(110deg, #70B9B9 60%, #DE5045 60%);*/
+
+}
+
+/*3 kolommen*/
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/*detailpagina web*/
+h1:last-of-type {
+    text-align: left;
+    margin-left: 3em;
+
+}
+
+
+.ropeswing {
+    width: 35em;
+    height: auto;
+    margin-left: 5em;
+    border-radius: 0;
+    
+}
+
+#klik {
+    margin-left: 6em;
+}
+
+/*Formulier verstoppen*/
+div {
+    display: none;
+    
+}
+
+div.show {
+    display: block;
+}
+
+
+/*Formulier*/
+form {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+}
+
+label {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 0.06em 0.125em 0.06em #040405;
+    padding: 0.5em;
+}
+
+input {
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+
+input,
+textarea {
+    border-color: #DE5045;
+    border-radius: 1em;
+    padding-left: 0.7em;
+}
+
+input[type="submit"] {
+    padding: 0.5em;
+    width: 10em;
+    margin-top: 2em;
+    border-radius: 2em;
+    background-color: #9ADEEF;
+}
+
+input[type="submit"]:hover {
+    padding: 0.5em;
+    width: 20em;
+    margin-top: 2em;
+    border-radius: 2em;
+    color: white;
+    text-shadow: 0.06em 0.125em 0.06em #040405;
+    background-color: #0053ba;
+    transition: all 0.5s ease;
+}
+input:focus {
+    outline: dotted;
+}
+
+input[type="radio"] {
+    color: red;
+    width: 1em;
+    height: 1em;
+    
+}
+
+input[type="radio"]:checked {
+    color: deepskyblue;
+    transition: 0.5s ease; 
+}
+
+input[type="radio"]:hover {
+    
+}
+
+/*footer*/
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 2em;
+    margin-top: 5em;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20em;
+}
+
+
+/*ipad formaat*/
+@media only screen and (max-width: 68.125em) {
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*https://codepen.io/andornagy/pen/xhiJH door Andor Nagy*/
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 1.5em;
+        border-radius: 50%;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*detailpagina*/
+
+    .ropeswing {
+        width: 25em;
+        height: auto;
+        margin-left: 2em;
+    }
+    
+    #klik {
+    margin-left: 1em;
+    }
+    .opgeven {
+        margin-left: 1em
+    }
+
+    p {
+        margin: 1em;
+    }
+
+    form {
+        ;
+        display: flex;
+        flex-direction: column;
+        width: 25em;
+        margin-left: -4em;
+    }
+}
+
+/*iphone formaat*/
+@media only screen and (max-width: 45em) {
+    .nav-mobile {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*https://codepen.io/andornagy/pen/xhiJH door Andor Nagy*/
+
+    section {
+        grid-template-columns: 1fr;
+
+    }
+
+    article {
+        padding: 0.3125em;
+        margin: 2.5em;
+    }
+
+    img {
+        width: 1.5em;
+        border-radius: 50%;
+
+    }
+
+    /*detailpagina*/
+
+    .ropeswing {
+        width: 20em;
+        height: auto;
+        margin-left: 0.5em;
+    }
+
+    p {
+        margin: 1em;
+        width: 23em;
+        font-size: 0.875em;
+    }
+
+    form {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        margin-left: -4em
+    }

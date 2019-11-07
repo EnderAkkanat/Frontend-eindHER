@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+
+                <li><a href="Alle.html">Alle Obstacles</a></li>
+                <li><a href="s1.html">Seizoen 1</a></li>
+                <li><a href="s2.html">Seisoen 2</a></li>
+                <li><a href="s3.html">Seisoen 3</a></li>
+                <li>
+                    <a href="">
+
+                        <img src="img/s-l300.jpg" alt="" />
+
+                    </a></li>
+                <!-- dropdown van https://codepen.io/massiebn/pen/KrJvi en een beetje hulp van Martijn-->
+            </ul>
+        </nav>
+
+        <nav class="nav-mobile">
+            <ul>
+
+
+                <li><a href="Alle.html">Alle Obstacles</a></li>
+                <li>
+                    <a href="">Seizoenen</a>
+                    <ul>
+                        <li><a href="s1.html">Seizoen 1</a></li>
+                        <li><a href="s2.html">Seisoen 2</a></li>
+                        <li><a href="s3.html">Seisoen 3</a></li>
+
+                    </ul>
+                <li>
+                    <a href="">
+
+                        <img src="img/s-l300.jpg" alt="" />
+
+                    </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1 >Rope Swing</h1>
+        <img class="ropeswing" src="img/rope.jpg" alt="rope swing">
+
+        <p>De Rope Swing, een van de meest uitdagende oefeningen van de ninja warrior run. Alleen de meest sterke, gediciplineerde en onuitputtelijke Ninja Warriors kunnen met gemak deze oefening halen. Ook een master willen worden van deze oefening? Geef jezelf dan op om mee te trainen en wordt de ultieme Ninja Warrior. </p>
+
+
+        <button id="klik">Opgeven voor training</button>
+         
+           <div>
+            <form action="detail.html">
+                <label for="naam"> Voornaam:</label>
+                <input id="naam" type="text" name="name">
+
+                <label for="achternaam"> Achternaam:</label>
+                <input id="achternaam" type="text" name="name">
+
+                <label for="email">Email adres:</label>
+                <input id="email" type="email">
+
+                <p>Kies je warrior niveau</p>
+
+                <label for=genin>Genin (beginner)</label>
+                <input id="genin" type="radio" name="niveau" value="Genin">
+
+                <label for="jounin">Jounin (ervaren)</label>
+                <input id="jounin" type="radio" name="niveau" value="Jounin">
+
+                <label for="kage">Kage (expert)</label>
+                <input id=kage type="radio" name="niveau" value="Kage">
+
+                <input type="submit" name="versturen" value="Versturen">
+                
+            </form>
+            </div>
+    </main>
+    <footer>
+        Contact: ninjawarrior.usa@gmail.com
+    
+    </footer>
+<script src="js/js.js"> </script>
+</body>
+
+
+</html>
